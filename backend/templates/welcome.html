@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Bienvenue{% endblock %}
+
+{% block content %}
+<div class="starter-template text-center">
+    <h1>Bienvenue sur votre espace personnel</h1>
+    <p class="lead">Vous êtes maintenant connecté. Profitez de nos fonctionnalités !</p>
+    <a href="{% url 'logout' %}" class="btn btn-danger">Se déconnecter</a>
+</div>
+{% endblock %}
